@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { screenSizes } from "../../styles/screen-sizes";
+import { Menu } from "../menu";
 
 export const NavBar = () => {
   return (
     <Container>
       <Logo>Logo</Logo>
-      <Menu>Menu</Menu>
+      <Menu />
       <ContactLink>Contact Link</ContactLink>
     </Container>
   );
@@ -42,20 +43,6 @@ export const Logo = styled.div`
   @media (max-width: ${screenSizes.smallLaptop}) {
     width: 100px;
     height: 80px;
-  }
-`;
-
-export const Menu = styled.nav`
-  width: 100px;
-  height: 300px;
-  background-color: black;
-
-  display: grid;
-  place-items: center;
-
-  @media (max-width: ${screenSizes.smallLaptop}) {
-    width: 50px;
-    height: 50px;
   }
 `;
 

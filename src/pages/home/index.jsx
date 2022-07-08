@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MainContent } from "../../components/main-content";
-import { NavBar } from "../../components/sidebar";
+import { NavBar } from "../../components/navbar";
 import { screenSizes } from "../../styles/screen-sizes";
 
 export const HomePage = () => {

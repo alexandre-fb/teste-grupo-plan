@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PlanNewsSection = () => {
   return (
-    <Container>
+    <Container id='plan-news-section'>
       <div>PLAN NEWS</div>
     </Container>
   );

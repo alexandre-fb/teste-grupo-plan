@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const QuemSomosSection = () => {
   return (
-    <Container>
+    <Container id="quem-somos-section">
       <div>QUEM SOMOS</div>
     </Container>
   );
@@ -15,5 +15,4 @@ export const Container = styled.section`
   color: black;
   display: grid;
   place-items: center;
-
 `;

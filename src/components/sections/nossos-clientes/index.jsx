@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NossosClientesSection = () => {
   return (
-    <Container>
+    <Container id='nossos-clientes-section'>
       <div>NOSSOS CLIENTES</div>
     </Container>
   );
