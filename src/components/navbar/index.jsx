@@ -4,16 +4,23 @@ import { Menu } from "../menu";
 
 export const NavBar = () => {
   return (
-    <Container>
-      <Logo>Logo</Logo>
-      <Menu />
-      <ContactLink>Contact Link</ContactLink>
-    </Container>
+    <Nav>
+      <Container>
+        <Logo>Logo</Logo>
+        <Menu />
+        <ContactLink>Contact Link</ContactLink>
+      </Container>
+    </Nav>
   );
 };
 
-export const Container = styled.nav`
+export const Nav = styled.nav`
   width: 20%;
+  position: relative;
+`;
+
+export const Container = styled.nav`
+  width: inherit;
   height: 100vh;
   background-color: red;
 
@@ -23,6 +30,8 @@ export const Container = styled.nav`
   align-items: center;
 
   padding: 20px;
+
+  position: fixed;
 
   @media (max-width: ${screenSizes.smallLaptop}) {
     flex-direction: row;
