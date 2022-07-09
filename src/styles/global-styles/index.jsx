@@ -2,6 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
+//=====VARIABLES=====
+:root { 
+	--light-gray: #ced4da;
+	--medium-gray: #939598; 
+	--dark-gray: #1e1e1e;
+}
+
 //=====RESET=====
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
