@@ -1,57 +1,56 @@
 import styled from "styled-components";
 import { screenSizes } from "../../styles/screen-sizes";
 import { Menu } from "../menu";
+import logoImg from "../../assets/images/logo.png";
+import { Link } from "react-scroll";
 
 export const NavBar = () => {
   return (
-    <Nav>
-      <Container>
-        <Logo>Logo</Logo>
-        <Menu />
-        <ContactLink>Contact Link</ContactLink>
-      </Container>
-    </Nav>
+    <Container>
+      <LogoArea>
+        <Link to={"quem-somos"} smooth={true} duration={1000}>
+          <img src={logoImg} alt="Logo Plan XP" />
+        </Link>
+      </LogoArea>
+      <Menu />
+      <ContactLink>Contact Link</ContactLink>
+    </Container>
   );
 };
 
-export const Nav = styled.nav`
-  width: 20%;
-  position: relative;
-`;
-
 export const Container = styled.nav`
-  width: inherit;
+  width: 235px;
   height: 100vh;
-  background-color: red;
+  background-color: #1e1e1e;
+  padding-top: 40px;
+
+  position: sticky;
+  top: 0;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px;
-
-  position: fixed;
-
   @media (max-width: ${screenSizes.smallLaptop}) {
     flex-direction: row;
     width: 100vw;
     height: 100px;
+
+    padding: 0 40px;
   }
 `;
 
-export const Logo = styled.div`
-  width: 100%;
-  height: 100px;
-  background-color: yellow;
-  color: black;
+export const LogoArea = styled.div`
+  max-width: 150px;
+  height: fit-content;
 
-  display: grid;
-  place-items: center;
+  img {
+    width: 100%;
+  }
 
   @media (max-width: ${screenSizes.smallLaptop}) {
-    width: 100px;
-    height: 80px;
+    max-width: 100px;
   }
 `;
 
