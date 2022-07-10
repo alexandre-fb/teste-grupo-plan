@@ -26,7 +26,7 @@ export const Container = styled.nav`
   width: ${({ responsive }) => (responsive ? "100vw" : "235px;")};
   height: 100vh;
   background-color: var(--very-dark-gray);
-  opacity: ${({ responsive }) => responsive && ".9"};
+  opacity: ${({ responsive }) => responsive && ".98"};
   padding-top: ${({ responsive }) => (responsive ? "150px" : "40px")};
 
   position: sticky;

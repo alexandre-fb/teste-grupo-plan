@@ -45,7 +45,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.25;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;

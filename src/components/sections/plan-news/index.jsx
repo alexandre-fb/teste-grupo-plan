@@ -1,19 +1,54 @@
 import styled from "styled-components";
+import { BlogLink } from "../../blog-link";
+import { NewsCard } from "../../news-card";
+import { SectionContainer } from "../../section-container";
+import { SectionTitle } from "../../section-title";
+import { newsData } from "./newsData";
 
 export const PlanNewsSection = () => {
   return (
-    <Container id='plan-news'>
-      <div>PLAN NEWS</div>
-    </Container>
+    <SectionContainer id="plan-news">
+      <TitleAndBlogLinkContainer>
+        <SectionTitle
+          smallTitle="/Plan news"
+          bigTitle="/Case Games"
+          backgroundNumber="03."
+        />
+        <BlogLink />
+      </TitleAndBlogLinkContainer>
+
+      <ContainerNewsCards>
+        {newsData.map((item, index) => {
+          return (
+            <NewsCard
+              key={index}
+              image={item.image}
+              positionImage={item.positionImage}
+              tag={item.tag}
+              title={item.title}
+              text={item.text}
+            />
+          );
+        })}
+      </ContainerNewsCards>
+    </SectionContainer>
   );
 };
 
-export const Container = styled.section`
-  width: 100%;
-  height: 100vh;
-  background-color: #c7c7c7;
-  color: black;
-  display: grid;
-  place-items: center;
+export const TitleAndBlogLinkContainer = styled.div`
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
 
+  & > :last-child {
+    position: relative;
+    bottom: 12px;
+  }
+`;
+
+export const ContainerNewsCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px 20px;
 `;
