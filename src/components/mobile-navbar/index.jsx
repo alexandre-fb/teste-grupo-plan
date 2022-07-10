@@ -44,6 +44,8 @@ export const Container = styled.header`
   align-items: center;
 
   padding: 0 40px;
+
+  z-index: 99;
 `;
 
 export const LogoArea = styled.div`
