@@ -23,8 +23,6 @@ export const NewsCard = ({ image, positionImage, tag, title, text }) => {
 };
 
 export const Container = styled.article`
-  max-width: 350px;
-  min-width: 200px;
   background-color: #292929;
 `;
 
