@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BlogLink } from "../../blog-link";
-import { NewsCard } from "../../news-card";
+import { NewsCard } from "../../cards/news-card";
 import { SectionContainer } from "../../section-container";
 import { SectionTitle } from "../../section-title";
 import { newsData } from "./newsData";

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { CardService } from "../../service-card";
-import { ContactLinkCard } from "../../contact-link-card";
+import { CardService } from "../../cards/service-card";
+import { ContactLinkCard } from "../../cards/contact-link-card";
 import { SectionContainer } from "../../section-container";
 import { SectionTitle } from "../../section-title";
 import { cardsServicesData, sectionData } from "./sectionData";
