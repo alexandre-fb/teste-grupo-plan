@@ -6,7 +6,7 @@ export const NewsCard = ({ image, positionImage, tag, title, text }) => {
   return (
     <Container>
       <ImageContainer>
-        <Image backgroundImage={image} positionImage={positionImage}/>
+        <Image backgroundImage={image} positionImage={positionImage} />
         <Icon src={gameIcon} />
       </ImageContainer>
       <DataContainer>
@@ -64,6 +64,12 @@ export const Tag = styled.span`
 export const Title = styled.h2`
   font-size: 20px;
   color: var(--medium-gray);
+
+  transition: 200ms;
+
+  :hover {
+    color: var(--light-gray);
+  }
 `;
 
 export const Text = styled.p`
@@ -80,8 +86,14 @@ export const LinkMore = styled.a`
 
   cursor: pointer;
 
+  transition: 200ms;
+
   svg {
     color: #fff;
     font-size: 1.2rem;
+  }
+
+  :hover {
+    color: var(--lignt-gray);
   }
 `;
