@@ -42,7 +42,7 @@ No arquivo do photoshop não estavam todas as seções do site, então tomei a l
 Ainda gostaria de ter feito um slider no banner do topo da página, e inserido o reCAPTCHA no formulário. Como sabia que ia ficar um tempo pesquisando para fazer essas duas funcionalidade, pois ainda não as domino, achei melhor priorizar o restante para entragar a tempo.
 
 ## Conclusão
-Achei o projeto bastante desafiador. Pude praticar bastante alguns conceitos importantes que já sabia e aprender alguns novos. Me sinto honrado em poder participar desse processo.
+Achei o projeto bastante desafiador. Pude praticar alguns conceitos importantes que já sabia e aprender alguns novos. Me sinto honrado em poder participar desse processo.
 
 ## Contato
 
