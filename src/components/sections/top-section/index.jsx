@@ -1,54 +1,20 @@
 import styled from "styled-components";
-import { BlogLink } from "../../link-with-arrow";
-import { NewsCard } from "../../cards/news-card";
-import { SectionContainer } from "../../section-container";
-import { SectionTitle } from "../../section-title";
-import { newsData } from "./newsData";
+import { screenSizes } from "../../../styles/screen-sizes";
+import { Banner } from "../../banner/";
+import { SectionContainer } from "../section-container";
 
-export const PlanNewsSection = () => {
+export const TopSection = () => {
   return (
-    <SectionContainer id="plan-news">
-      <TitleAndBlogLinkContainer>
-        <SectionTitle
-          smallTitle="/Plan news"
-          bigTitle="/Case Games"
-          backgroundNumber="03."
-        />
-        <BlogLink />
-      </TitleAndBlogLinkContainer>
-
-      <ContainerNewsCards>
-        {newsData.map((item, index) => {
-          return (
-            <NewsCard
-              key={index}
-              image={item.image}
-              positionImage={item.positionImage}
-              tag={item.tag}
-              title={item.title}
-              text={item.text}
-            />
-          );
-        })}
-      </ContainerNewsCards>
-    </SectionContainer>
+    <Container id="top-section">
+      <Banner />
+    </Container>
   );
 };
 
-export const TitleAndBlogLinkContainer = styled.div`
-  display: flex;
-  align-items: end;
-  gap: 20px;
-  flex-wrap: wrap;
+export const Container = styled(SectionContainer)`
+  padding: 0;
 
-  & > :last-child {
-    position: relative;
-    bottom: 12px;
+  @media (max-width: ${screenSizes.smallLaptop}){
+    padding-top: 100px;
   }
-`;
-
-export const ContainerNewsCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 40px 20px;
 `;

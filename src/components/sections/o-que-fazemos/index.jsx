@@ -78,7 +78,7 @@ export const SubTitle = styled.h3`
 
 export const CardsServicesAndContactLinkContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 40px 20px;
 
   @media (max-width: ${screenSizes.mobile}) {

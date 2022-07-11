@@ -11,14 +11,14 @@ export const LinkWithArrow = ({
 }) => {
   return (
     <Container arrowSize={arrowSize}>
-      {link ? (
-        <a href={link} target={target}>
-          {children}
-        </a>
-      ) : (
+      {section ? (
         <Link to={section} smooth={true} spy={true} duration={600}>
           {children}
         </Link>
+      ) : (
+        <a href={link} target={target}>
+          {children}
+        </a>
       )}
 
       <ArrowIcon />
