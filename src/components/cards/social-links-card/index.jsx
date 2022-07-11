@@ -68,8 +68,6 @@ export const IconLink = styled.a`
   place-items: center;
   border-radius: 100%;
 
-
-
   svg {
     font-size: 1.3rem;
   }

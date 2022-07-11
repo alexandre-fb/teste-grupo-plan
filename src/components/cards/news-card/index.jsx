@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import gameIcon from "../../../assets/images/icons/game-icon.png";
 import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
+import { LinkWithArrow } from "../../link-with-arrow";
 
 export const NewsCard = ({ image, positionImage, tag, title, text }) => {
   return (
@@ -13,10 +14,7 @@ export const NewsCard = ({ image, positionImage, tag, title, text }) => {
         <Tag>{tag}</Tag>
         <Title>{title}</Title>
         <Text>{text}</Text>
-        <LinkMore>
-          Saiba Mais
-          <ArrowIcon />
-        </LinkMore>
+        <LinkWithArrow>Saiba Mais</LinkWithArrow>
       </DataContainer>
     </Container>
   );
@@ -73,25 +71,4 @@ export const Title = styled.h2`
 export const Text = styled.p`
   font-size: 13px;
   color: #fff;
-`;
-
-export const LinkMore = styled.a`
-  display: flex;
-  align-items: center;
-
-  text-transform: uppercase;
-  color: var(--medium-gray);
-
-  cursor: pointer;
-
-  transition: 200ms;
-
-  svg {
-    color: #fff;
-    font-size: 1.2rem;
-  }
-
-  :hover {
-    color: var(--lignt-gray);
-  }
 `;

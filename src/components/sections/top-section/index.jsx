@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { LinkWithArrow } from "../../link-with-arrow";
+import { BlogLink } from "../../link-with-arrow";
 import { NewsCard } from "../../cards/news-card";
-import { SectionContainer } from "../section-container";
-import { SectionTitle } from "../section-title";
+import { SectionContainer } from "../../section-container";
+import { SectionTitle } from "../../section-title";
 import { newsData } from "./newsData";
 
 export const PlanNewsSection = () => {
@@ -14,7 +14,7 @@ export const PlanNewsSection = () => {
           bigTitle="/Case Games"
           backgroundNumber="03."
         />
-        <LinkWithArrow>clique aqui para ver todo o blog</LinkWithArrow>
+        <BlogLink />
       </TitleAndBlogLinkContainer>
 
       <ContainerNewsCards>

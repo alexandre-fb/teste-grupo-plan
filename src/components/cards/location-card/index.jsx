@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdLocationOn as LocalIcon } from "react-icons/md";
 import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
+import { LinkWithArrow } from "../../link-with-arrow";
 
 export const LocationCard = ({
   estado,
@@ -13,23 +14,21 @@ export const LocationCard = ({
   return (
     <Container>
       <h2>
-        <LocalIcon />
-        /{estado}
+        <LocalIcon />/{estado}
       </h2>
       <p>
         {endereco}
         <br />
-          {cidade}/{estado},
+        {cidade}/{estado},
         <br />
         {pais}
         <br />
         {telefone}
       </p>
 
-      <a href={linkGoogleMaps} target="_blank">
+      <LinkWithArrow link={linkGoogleMaps} target="_blank">
         ver no google maps
-        <ArrowIcon />
-      </a>
+      </LinkWithArrow>
     </Container>
   );
 };
@@ -43,25 +42,6 @@ export const Container = styled.div`
   h2 {
     font-size: 20px;
     color: var(--medium-gray);
-  }
-
-  a {
-    text-transform: uppercase;
-    font-size: 13px;
-    position: relative;
-    cursor: pointer;
-    color: var(--medium-gray);
-
-    transition: 300ms;
-
-    svg {
-      font-size: 1rem;
-      position: absolute;
-    }
-
-    :hover {
-      color: var(--light-gray);
-    }
   }
 `;
 

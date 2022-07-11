@@ -47,13 +47,15 @@ export const Container = styled.div`
 
     transition: 300ms;
 
+    color: var(--medium-gray);
+
     svg {
       font-size: 1rem;
       position: absolute;
     }
 
     :hover {
-      color: var(--medium-gray);
+      color: var(--light-gray);
     }
   }
 `;

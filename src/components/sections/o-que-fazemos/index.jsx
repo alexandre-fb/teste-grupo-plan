@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { CardService } from "../../cards/service-card";
 import { ContactLinkCard } from "../../cards/contact-link-card";
-import { SectionContainer } from "../../section-container";
-import { SectionTitle } from "../../section-title";
+import { SectionContainer } from "../section-container";
+import { SectionTitle } from "../section-title";
 import { cardsServicesData, sectionData } from "./sectionData";
 import { screenSizes } from "../../../styles/screen-sizes";
 

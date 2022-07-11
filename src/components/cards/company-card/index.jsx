@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
+import { LinkWithArrow } from "../../link-with-arrow";
 
 export const CompanyCard = ({ logo, description, link }) => {
   return (
@@ -7,10 +7,9 @@ export const CompanyCard = ({ logo, description, link }) => {
       <img src={logo}></img>
       <p>{description}</p>
 
-      <a href={link} target="_blank">
+      <LinkWithArrow link={link} target="_blank">
         Conheça
-        <ArrowIcon />
-      </a>
+      </LinkWithArrow>
     </Container>
   );
 };
@@ -25,43 +24,4 @@ export const Container = styled.div`
     width: 80%;
     max-width: 100px;
   }
-
-  a {
-    text-transform: uppercase;
-    font-size: 13px;
-    position: relative;
-    cursor: pointer;
-    color: var(--medium-gray);
-
-    transition: 300ms;
-
-    svg {
-      font-size: 1rem;
-      position: absolute;
-    }
-
-    :hover {
-      color: var(--light-gray);
-    }
-  }
 `;
-
-// export const SocialLinksContainer = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-// `;
-
-// export const IconLink = styled.a`
-//   width: 40px;
-//   height: 40px;
-//   background-color: var(--medium-gray);
-//   color: var(--very-dark-gray);
-
-//   display: grid;
-//   place-items: center;
-//   border-radius: 100%;
-
-//   svg {
-//     font-size: 1.5rem;
-//   }
-// `;

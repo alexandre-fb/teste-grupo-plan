@@ -3,8 +3,8 @@ import { CompanyCard } from "../../cards/company-card";
 import { LocationCard } from "../../cards/location-card";
 import { SocialLinksCard } from "../../cards/social-links-card";
 import { ContactForm } from "../../contact-form";
-import { SectionContainer } from "../../section-container";
-import { SectionTitle } from "../../section-title";
+import { SectionContainer } from "../section-container";
+import { SectionTitle } from "../section-title";
 import { screenSizes } from "../../../styles/screen-sizes";
 import logoPlanMkt from "../../../assets/images/logos-companys/plan-mkt.png";
 import logoPlanXp from "../../../assets/images/logos-companys/plan-xp.png";
@@ -59,7 +59,6 @@ export const ContatoSection = () => {
           />
         </ContactCardsContainer>
       </Container>
-      <TesteCantos />
     </SectionContainer>
   );
 };
@@ -90,8 +89,3 @@ export const ContactCardsContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 `;
-
-export const TesteCantos = styled.div`
- 
-
-`
