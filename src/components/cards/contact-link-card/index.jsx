@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
-import ControlIcon from "../../assets/images/icons/control-icon.png";
+import ControlIcon from "../../../assets/images/icons/control-icon.png";
 
 export const ContactLinkCard = () => {
   return (
@@ -43,10 +43,17 @@ export const Container = styled.div`
     text-transform: uppercase;
     font-size: 12px;
     position: relative;
+    cursor: pointer;
+
+    transition: 300ms;
 
     svg {
       font-size: 1rem;
       position: absolute;
+    }
+
+    :hover {
+      color: var(--medium-gray);
     }
   }
 `;
