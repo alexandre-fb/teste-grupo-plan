@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SectionContainer } from "../section-container";
 import { SectionTitle } from "../section-title";
+
 import Cliente01 from "../../../assets/images/logos-clientes/cliente01.webp";
 import Cliente02 from "../../../assets/images/logos-clientes/cliente02.webp";
 import Cliente03 from "../../../assets/images/logos-clientes/cliente03.webp";
@@ -65,7 +66,13 @@ export const LogosCustomersContainer = styled.div`
   justify-content: space-between;
 
   img {
-    max-width: 110px;
+    max-width: 150px;
+  }
+
+  @media (max-width: ${screenSizes.smallLaptop}) {
+    img {
+      max-width: 120px;
+    }
   }
 
   @media (max-width: ${screenSizes.tablet}) {
