@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MainContent } from "../../components/main-content";
-import { ResponsiveNavbar } from "../../components/responsive-navbar";
+import { ResponsiveNavbar } from "../../components/navbar/responsive-navbar";
 
 export const HomePage = () => {
   return (

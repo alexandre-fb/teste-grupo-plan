@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MobileNavBar } from "../mobile-navbar";
 import { DefaultNavBar } from "../default-navbar";
-import { screenSizes } from "../../styles/screen-sizes";
+import { screenSizes } from "../../../styles/screen-sizes";
 
 export const ResponsiveNavbar = () => {
   return (

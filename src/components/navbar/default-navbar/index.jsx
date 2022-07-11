@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Menu } from "../menu";
+import { Menu } from "../../menu";
 import { Link } from "react-scroll";
 import { ContactLink } from "../contact-link";
-import logoImg from "../../assets/images/logo.png";
+import logoImg from "../../../assets/images/logo.png";
 
 export const DefaultNavBar = ({ responsive, setMobileMenuIsOpen }) => {
   return (

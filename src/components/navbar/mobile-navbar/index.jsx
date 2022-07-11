@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import logoImg from "../../assets/images/logo.png";
+import logoImg from "../../../assets/images/logo.png";
 import { Link } from "react-scroll";
 import { HiMenu as MenuMobileIcon } from "react-icons/hi";
 import { AiOutlineClose as CloseMenuMobileIcon } from "react-icons/ai";
