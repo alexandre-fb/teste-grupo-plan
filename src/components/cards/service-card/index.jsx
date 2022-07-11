@@ -9,7 +9,7 @@ export const CardService = ({ image, text }) => {
   );
 };
 
-export const Container = styled.div`
+export const Container = styled.article`
   min-width: 100px;
   max-width: 250px;
 `;

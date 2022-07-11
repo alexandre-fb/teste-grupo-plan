@@ -1,10 +1,10 @@
-import styled from "styled-components"; 
+import styled from "styled-components";
 
 export const SectionContainer = styled.section`
   width: 100%;
   min-height: 100vh;
   background-color: var(--very-dark-gray);
-  padding: 150px 50px;
+  padding: 110px 50px;
 
   display: flex;
   flex-direction: column;

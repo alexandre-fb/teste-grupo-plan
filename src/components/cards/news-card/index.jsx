@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import gameIcon from "../../assets/images/icons/game-icon.png";
+import gameIcon from "../../../assets/images/icons/game-icon.png";
 import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
 
 export const NewsCard = ({ image, positionImage, tag, title, text }) => {
