@@ -14,7 +14,7 @@ export const PlanNewsSection = () => {
           bigTitle="/Case Games"
           backgroundNumber="03."
         />
-        <LinkWithArrow>clique aqui para ver todo o blog</LinkWithArrow>
+        <LinkWithArrow link=''>clique aqui para ver todo o blog</LinkWithArrow>
       </TitleAndBlogLinkContainer>
 
       <ContainerNewsCards>

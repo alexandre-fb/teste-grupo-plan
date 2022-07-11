@@ -12,7 +12,7 @@ export const MobileNavBar = () => {
   return (
     <Container>
       <LogoArea>
-        <Link to={"quem-somos"} smooth={true} duration={600}>
+        <Link to={"top-section"} smooth={true} duration={600}>
           <img src={logoImg} alt="Logo Plan XP" />
         </Link>
       </LogoArea>
