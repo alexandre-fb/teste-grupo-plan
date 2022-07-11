@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { TitleAndBlogLinkContainer, ContainerNewsCards } from "./styles";
 import { LinkWithArrow } from "../../link-with-arrow";
 import { NewsCard } from "../../cards/news-card";
 import { SectionContainer } from "../section-container";
@@ -14,7 +14,7 @@ export const PlanNewsSection = () => {
           bigTitle="/Case Games"
           backgroundNumber="03."
         />
-        <LinkWithArrow link=''>clique aqui para ver todo o blog</LinkWithArrow>
+        <LinkWithArrow link="">clique aqui para ver todo o blog</LinkWithArrow>
       </TitleAndBlogLinkContainer>
 
       <ContainerNewsCards>
@@ -34,21 +34,3 @@ export const PlanNewsSection = () => {
     </SectionContainer>
   );
 };
-
-export const TitleAndBlogLinkContainer = styled.div`
-  display: flex;
-  align-items: end;
-  gap: 20px;
-  flex-wrap: wrap;
-
-  & > :last-child {
-    position: relative;
-    bottom: 12px;
-  }
-`;
-
-export const ContainerNewsCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 40px 20px;
-`;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { Container } from "./styles";
 import { ContatoSection } from "../sections/contato";
 import { NossosClientesSection } from "../sections/nossos-clientes";
 import { OQueFazemosSection } from "../sections/o-que-fazemos";
@@ -18,17 +18,3 @@ export const MainContent = () => {
     </Container>
   );
 };
-
-export const Container = styled.main`
-  width: 100%;
-  height: fit-content;
-  background-color: green;
-
-  /* div {
-    width: 100%;
-    height: 100vh;
-
-    display: grid;
-    place-items: center;
-  } */
-`;

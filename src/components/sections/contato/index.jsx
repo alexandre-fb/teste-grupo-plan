@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import {
+  SectionTitleAndFormContainer,
+  Container,
+  ContactCardsContainer,
+} from "./styles";
 import { CompanyCard } from "../../cards/company-card";
 import { LocationCard } from "../../cards/location-card";
 import { SocialLinksCard } from "../../cards/social-links-card";
 import { ContactForm } from "../../contact-form";
 import { SectionContainer } from "../section-container";
 import { SectionTitle } from "../section-title";
-import { screenSizes } from "../../../styles/screen-sizes";
+
 import logoPlanMkt from "../../../assets/images/logos-companys/plan-mkt.png";
 import logoPlanXp from "../../../assets/images/logos-companys/plan-xp.png";
 import logoFullUp from "../../../assets/images/logos-companys/full-up.png";
@@ -15,7 +19,7 @@ export const ContatoSection = () => {
     <SectionContainer id="contato">
       <Container>
         <SectionTitleAndFormContainer>
-          <SectionTitle bigTitle="Contato" backgroundNumber="05." />
+          <SectionTitle bigTitle="/Contato" backgroundNumber="05." />
           <p>
             Gostou de saber mais sobre as inovações tecnológicas e também quer
             oferecer novas experiências aos seus clientes? Então entre em
@@ -62,30 +66,3 @@ export const ContatoSection = () => {
     </SectionContainer>
   );
 };
-
-export const SectionTitleAndFormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
-
-  @media (max-width: ${screenSizes.smallLaptop}) {
-    grid-template-columns: 100%;
-  }
-`;
-
-export const ContactCardsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-template-rows: auto auto;
-  grid-gap: 40px;
-
-  @media (max-width: ${screenSizes.tablet}) {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-`;

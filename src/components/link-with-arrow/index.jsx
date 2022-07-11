@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { Container } from "./styles";
 import { FiArrowDownRight as ArrowIcon } from "react-icons/fi";
 import { Link } from "react-scroll";
 
@@ -25,25 +25,3 @@ export const LinkWithArrow = ({
     </Container>
   );
 };
-
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-
-  a {
-    font-size: 12px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 200ms;
-
-    color: var(--medium-gray);
-
-    :hover {
-      color: var(--light-gray);
-    }
-  }
-
-  svg {
-    font-size: ${({ arrowSize }) => (arrowSize ? arrowSize : "1rem")};
-  }
-`;

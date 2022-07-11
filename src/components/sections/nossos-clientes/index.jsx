@@ -1,29 +1,13 @@
-import styled from "styled-components";
-import { SectionContainer } from "../section-container";
-import { SectionTitle } from "../section-title";
+import {
+  Container,
+  SectionTitleAndTextContainer,
+  LogosCustomersContainer,
+} from "./styles";
 
-import Cliente01 from "../../../assets/images/logos-clientes/cliente01.webp";
-import Cliente02 from "../../../assets/images/logos-clientes/cliente02.webp";
-import Cliente03 from "../../../assets/images/logos-clientes/cliente03.webp";
-import Cliente04 from "../../../assets/images/logos-clientes/cliente04.webp";
-import Cliente05 from "../../../assets/images/logos-clientes/cliente05.webp";
-import Cliente06 from "../../../assets/images/logos-clientes/cliente06.webp";
-import Cliente07 from "../../../assets/images/logos-clientes/cliente07.webp";
-import Cliente08 from "../../../assets/images/logos-clientes/cliente08.webp";
-import { screenSizes } from "../../../styles/screen-sizes";
+import { SectionTitle } from "../section-title";
+import { clientesImgs } from "./custumersImages";
 
 export const NossosClientesSection = () => {
-  const clientesImgs = [
-    Cliente01,
-    Cliente02,
-    Cliente03,
-    Cliente04,
-    Cliente05,
-    Cliente06,
-    Cliente07,
-    Cliente08,
-  ];
-
   return (
     <Container id="nossos-clientes">
       <SectionTitleAndTextContainer>
@@ -41,49 +25,3 @@ export const NossosClientesSection = () => {
     </Container>
   );
 };
-
-export const Container = styled(SectionContainer)`
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  align-items: center;
-
-  @media (max-width: ${screenSizes.tablet}) {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-`;
-
-export const SectionTitleAndTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-`;
-
-export const LogosCustomersContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  justify-content: space-between;
-
-  img {
-    max-width: 150px;
-  }
-
-  @media (max-width: ${screenSizes.smallLaptop}) {
-    img {
-      max-width: 120px;
-    }
-  }
-
-  @media (max-width: ${screenSizes.tablet}) {
-    grid-template-columns: 1fr 1fr;
-
-    img {
-      max-width: 150px;
-    }
-  }
-
-  @media (max-width: ${screenSizes.mobile}) {
-    grid-template-columns: 100%;
-  }
-`;

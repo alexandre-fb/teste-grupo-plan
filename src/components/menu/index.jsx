@@ -1,6 +1,5 @@
-import styled from "styled-components";
+import { Container, BackgroundNumber } from "./styles";
 import { Link } from "react-scroll";
-import { screenSizes } from "../../styles/screen-sizes";
 
 export const Menu = ({ setMobileMenuIsOpen }) => {
   const menuItems = [
@@ -22,9 +21,7 @@ export const Menu = ({ setMobileMenuIsOpen }) => {
               activeClass={"active"}
               spy={true}
               duration={600}
-              onClick={() =>
-                setMobileMenuIsOpen && setMobileMenuIsOpen(false)
-              }
+              onClick={() => setMobileMenuIsOpen && setMobileMenuIsOpen(false)}
             >
               {item.name}
             </Link>
@@ -35,39 +32,3 @@ export const Menu = ({ setMobileMenuIsOpen }) => {
     </Container>
   );
 };
-
-export const Container = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 45px;
-
-  li {
-    cursor: pointer;
-    font-size: 15px;
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    transition: 300ms;
-
-    & .active {
-      transition: 300ms;
-      font-weight: 300;
-      color: var(--medium-gray);
-    }
-
-    &:hover {
-      color: var(--light-gray);
-    }
-  }
-`;
-
-export const BackgroundNumber = styled.span`
-  font-size: 60px;
-  font-weight: 800;
-  opacity: 0.05;
-  position: absolute;
-  z-index: -1;
-`;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { Container } from "./styles";
 import { LinkWithArrow } from "../../link-with-arrow";
 
 export const CompanyCard = ({ logo, description, link }) => {
@@ -13,15 +13,3 @@ export const CompanyCard = ({ logo, description, link }) => {
     </Container>
   );
 };
-
-export const Container = styled.div`
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  img {
-    width: 80%;
-    max-width: 100px;
-  }
-`;

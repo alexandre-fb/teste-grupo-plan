@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import { Container } from "./styles";
 import { MobileNavBar } from "../mobile-navbar";
 import { DefaultNavBar } from "../default-navbar";
-import { screenSizes } from "../../../styles/screen-sizes";
 
 export const ResponsiveNavbar = () => {
   return (
@@ -15,22 +14,3 @@ export const ResponsiveNavbar = () => {
     </Container>
   );
 };
-
-export const Container = styled.div`
-  header {
-    display: none;
-
-    @media (max-width: ${screenSizes.smallLaptop}) {
-      display: flex;
-    }
-  }
-
-  aside {
-    position: sticky;
-    top: 0;
-
-    @media (max-width: ${screenSizes.smallLaptop}) {
-      display: none;
-    }
-  }
-`;
