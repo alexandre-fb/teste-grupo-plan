@@ -78,6 +78,10 @@ export const DataContainer = styled.div`
   gap: 15px;
   justify-content: center;
   padding: 80px;
+
+  @media (max-width: ${screenSizes.tablet}) {
+    padding: 40px;
+  }
 `;
 
 export const Tag = styled.span`
